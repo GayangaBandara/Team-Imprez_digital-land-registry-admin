@@ -1,4 +1,3 @@
-```markdown
 # Digital Land Registry Hub
 
 A full-stack web application for a Digital Land Registry Hub, with a Next.js frontend and a FastAPI backend. This project provides a secure platform for citizens and officers to manage land registration, property records, and related services.
