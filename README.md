@@ -321,7 +321,7 @@ pnpm dev
 ```
 -----
 
-### Admin  Dashboard 
+### Admin Dashboard
 
 The admin dashboard provides a centralized interface for managing the Digital Land Registry Hub. Key features include:
 
@@ -340,7 +340,7 @@ The admin dashboard provides a centralized interface for managing the Digital La
 ### File and Folder Structure
 
 ```
-Team-Imprez_digital-land-registry/
+admin/
 ├── app/
 │   ├── admin/
 │   │   ├── analytics/
