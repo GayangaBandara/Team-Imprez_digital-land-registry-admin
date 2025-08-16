@@ -317,106 +317,87 @@ From the `Frontend` directory, run the following command:
 ```sh
 pnpm dev
 ```
-
-```
 -----
 
 ### Admin Dashboard
 
 The admin dashboard provides a centralized interface for managing the Digital Land Registry Hub. Key features include:
 
-* Dashboard Overview: At-a-glance view of key metrics, including total applications, pending reviews, and active users.
-* Application Management: A comprehensive table to view, filter, and manage all land registry applications. Admins can search, sort, and perform bulk actions on applications.
-* Document Verification: A dedicated interface for reviewing and verifying uploaded documents, complete with an AI-powered authenticity score and a side-by-side viewer.
-* Appointment Scheduling: A calendar-based system for managing appointments with applicants, with day, week, and month views.
-* Analytics and Reports: A detailed analytics page with charts and graphs for application trends, SLA performance, rejection reasons, and peak activity hours.
-* User Management: A section for managing user accounts, including roles and permissions.
-* Audit Logs: A security-focused log of all actions taken within the system for tracking and accountability.
-* Notifications: A tool to create and broadcast system-wide notifications to users and staff.
-* Profile Management: Admins can manage their own profiles, including changing passwords and viewing activity logs.
+* **Dashboard Overview**: View key metrics such as total applications, pending reviews, and active users.
+* **Application Management**: Table to view, filter, and manage applications. Includes search, sorting, and bulk actions.
+* **Document Verification**: Interface for verifying uploaded documents with an AI-powered authenticity score and side-by-side preview.
+* **Appointment Scheduling**: Calendar system (day/week/month) for managing applicant appointments.
+* **Analytics and Reports**: Charts and graphs showing trends, SLA performance, rejection reasons, and activity peaks.
+* **User Management**: Manage user accounts, roles, and permissions.
+* **Audit Logs**: Security logs for tracking all admin activities.
+* **Notifications**: Create and broadcast system-wide notifications.
+* **Profile Management**: Admin profile settings, including password changes and activity history.
 
------
+---
 
 ### File and Folder Structure
 
-```
 Team-Imprez_digital-land-registry-admin/
 ├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   ├── globals.css
-│   └── admin/
-│       ├── analytics/
-│       │   ├── loading.tsx
-│       │   └── page.tsx
-│       ├── applications/
-│       │   ├── [id]/
-│       │   │   └── page.tsx
-│       │   ├── loading.tsx
-│       │   └── page.tsx
-│       ├── appointments/
-│       │   ├── loading.tsx
-│       │   └── page.tsx
-│       ├── audit/
-│       │   ├── loading.tsx
-│       │   └── page.tsx
-│       ├── components/
-│       │   ├── Header.tsx
-│       │   └── Sidebar.tsx
-│       ├── documents/
-│       │   ├── loading.tsx
-│       │   └── page.tsx
-│       ├── notifications/
-│       │   ├── loading.tsx
-│       │   └── page.tsx
-│       ├── profile/
-│       │   ├── activity-log/
-│       │   │   └── page.tsx
-│       │   ├── change-password/
-│       │   │   └── page.tsx
-│       │   └── settings/
-│       │       └── page.tsx
-│       ├── reports/
-│       │   └── page.tsx
-│       ├── users/
-│       │   └── page.tsx
-│       ├── layout.tsx
-│       ├── loading.tsx
-│       └── page.tsx
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
+│ ├── admin/
+│ │ ├── analytics/
+│ │ │ ├── loading.tsx
+│ │ │ └── page.tsx
+│ │ ├── applications/
+│ │ │ ├── [id]/page.tsx
+│ │ │ ├── loading.tsx
+│ │ │ └── page.tsx
+│ │ ├── appointments/
+│ │ │ ├── loading.tsx
+│ │ │ └── page.tsx
+│ │ ├── audit/
+│ │ │ ├── loading.tsx
+│ │ │ └── page.tsx
+│ │ ├── components/
+│ │ │ ├── Header.tsx
+│ │ │ └── Sidebar.tsx
+│ │ ├── documents/
+│ │ │ ├── loading.tsx
+│ │ │ └── page.tsx
+│ │ ├── notifications/
+│ │ │ ├── loading.tsx
+│ │ │ └── page.tsx
+│ │ ├── profile/
+│ │ │ ├── activity-log/page.tsx
+│ │ │ ├── change-password/page.tsx
+│ │ │ └── settings/page.tsx
+│ │ ├── reports/page.tsx
+│ │ ├── users/page.tsx
+│ │ ├── layout.tsx
+│ │ ├── loading.tsx
+│ │ └── page.tsx
+│ ├── globals.css
+│ ├── layout.tsx
+│ └── page.tsx
 ├── components/
-│   ├── auth/
-│   │   ├── LoginForm.tsx
-│   │   └── RegisterForm.tsx
-│   ├── dashboard/
-│   │   └── Dashboard.tsx
-│   ├── layout/
-│   │   └── Header.tsx
-│   ├── ui/
-│   │   ├── accordion.tsx
-│   │   ├── alert-dialog.tsx
-│   │   ├── alert.tsx
-│   │   ├── .....
-│   └── theme-provider.tsx
+│ ├── auth/
+│ │ ├── LoginForm.tsx
+│ │ └── RegisterForm.tsx
+│ ├── dashboard/Dashboard.tsx
+│ ├── layout/Header.tsx
+│ ├── ui/ # Shadcn UI components
+│ │ ├── accordion.tsx
+│ │ ├── alert-dialog.tsx
+│ │ ├── alert.tsx
+│ │ └── ...
+│ └── theme-provider.tsx
 ├── hooks/
-│   ├── use-mobile.ts
-│   └── use-toast.ts
+│ ├── use-mobile.ts
+│ └── use-toast.ts
 ├── lib/
-│   ├── api.ts
-│   └── utils.ts
+│ ├── api.ts
+│ └── utils.ts
 ├── public/
-│   ├── document-stack.png
-│   ├── placeholder-5rq7a.png
-│   ├── placeholder-odp6n.png
-│   ├── placeholder-rd6ps.png
-│   ├── placeholder-user.jpg
-│   ├── placeholder.svg
-│   ├── sri-lanka-logo.png
-│   └── survey-plan.png
-├── styles/
-│   └── globals.css
+│ ├── document-stack.png
+│ ├── placeholder-user.jpg
+│ ├── sri-lanka-logo.png
+│ └── survey-plan.png
+├── styles/globals.css
 ├── .gitignore
 ├── README.md
 ├── components.json
@@ -425,6 +406,3 @@ Team-Imprez_digital-land-registry-admin/
 ├── pnpm-lock.yaml
 ├── postcss.config.mjs
 └── tsconfig.json
-
------
------
