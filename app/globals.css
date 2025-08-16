@@ -4,39 +4,39 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --background: #00508E;
+  --foreground: #FFFFFF;
+  --card: #F4FAFF;
+  --card-foreground: #002E51;
+  --popover: #F4FAFF;
+  --popover-foreground: #002E51;
+  --primary: #002E51;
+  --primary-foreground: #FFFFFF;
+  --secondary: #4490CC;
+  --secondary-foreground: #002E51;
+  --muted: #E6F0FA;
+  --muted-foreground: #4490CC;
+  --accent: #4490CC;
+  --accent-foreground: #002E51;
+  --destructive: #FF6B6B;
+  --destructive-foreground: #FFFFFF;
+  --border: #4490CC;
+  --input: #4490CC;
+  --ring: #00508E;
+  --chart-1: #00508E;
+  --chart-2: #4490CC;
+  --chart-3: #002E51;
+  --chart-4: #F4FAFF;
+  --chart-5: #4490CC;
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #4490CC;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #002E51;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #00508E;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #4490CC;
+  --sidebar-ring: #00508E;
 }
 
 @theme inline {
@@ -45,8 +45,10 @@
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* Custom CSS variables for the landing page */
-  --bg-primary: #1e40af;
-  --nav-bg: #1e3a8a;
+  --bg-primary: #00508E;  /* Main app background */
+  --nav-bg: #4490CC;      /* Top & sidebar navigation */
+  --btn-bg: #00508E;      /* Primary buttons */
+  --surface: #00508E;     /* Card/table background */
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -107,3 +109,4 @@
     @apply bg-background text-foreground;
   }
 }
+

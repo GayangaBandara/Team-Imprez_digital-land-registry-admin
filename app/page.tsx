@@ -86,7 +86,7 @@ export default function Home() {
       <div className="bg-gradient-to-br from-[var(--bg-primary)] to-[var(--nav-bg)] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Department of Land Registration Land Services</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Department of Land Registration</h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
               Streamlined government land registration and services portal for citizens
             </p>
@@ -154,72 +154,42 @@ export default function Home() {
       {/* Services Section */}
       <div className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Available Services</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Access a comprehensive range of land services through our digital platform
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {/* New Services */}
             <div className="surface-card p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Land Registration</h3>
-              <p className="text-gray-600 mb-4">Register new land ownership and property titles</p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Property title registration</li>
-                <li>• Ownership verification</li>
-                <li>• Legal documentation</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Land Transfer</h3>
+              <p className="text-gray-600 mb-4">
+                Register the transfer of land ownership from the seller to the buyer with full legal documentation and verification.
+              </p>
             </div>
 
             <div className="surface-card p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Title Transfer</h3>
-              <p className="text-gray-600 mb-4">Transfer property ownership between parties</p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Ownership transfer processing</li>
-                <li>• Legal validation</li>
-                <li>• Document verification</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Application for Copy of Land Registers</h3>
+              <p className="text-gray-600 mb-4">
+                Request an officially certified copy of land records for legal, administrative, or personal reference purposes.
+              </p>
             </div>
 
             <div className="surface-card p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Survey Requests</h3>
-              <p className="text-gray-600 mb-4">Professional land surveying services</p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Boundary surveys</li>
-                <li>• Topographic mapping</li>
-                <li>• Property measurement</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Application for Search of Land Registers</h3>
+              <p className="text-gray-600 mb-4">
+                Conduct a search in the official land registry to verify ownership details, boundaries, and encumbrances.
+              </p>
             </div>
 
             <div className="surface-card p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Subdivision</h3>
-              <p className="text-gray-600 mb-4">Divide properties into separate parcels</p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Plot subdivision</li>
-                <li>• Zoning compliance</li>
-                <li>• Infrastructure planning</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Application for Search Duplicate of Deeds</h3>
+              <p className="text-gray-600 mb-4">
+                Locate and review registered land records to confirm property history and registration details.
+              </p>
             </div>
 
             <div className="surface-card p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Land Permits</h3>
-              <p className="text-gray-600 mb-4">Obtain permits for land use and development</p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Development permits</li>
-                <li>• Land use authorization</li>
-                <li>• Environmental clearance</li>
-              </ul>
-            </div>
-
-            <div className="surface-card p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Document Services</h3>
-              <p className="text-gray-600 mb-4">Manage and verify land-related documents</p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Document upload</li>
-                <li>• Verification services</li>
-                <li>• Digital archiving</li>
-              </ul>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Application for Copy</h3>
+              <p className="text-gray-600 mb-4">
+                Request a duplicate copy of a registered deed when the original document has been lost or damaged.
+              </p>
             </div>
           </div>
         </div>

@@ -138,7 +138,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <DropdownMenu open={isNotificationOpen} onOpenChange={setIsNotificationOpen}>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="relative" onClick={handleNotificationClick}>
+              <Button variant="ghost" size="sm" className="relative bg-[#4490CC] hover:bg-[#00508E] text-white hover:text-white" onClick={handleNotificationClick}>
                 <Bell className="w-5 h-5" />
                 {unreadCount > 0 && (
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-xs text-white flex items-center justify-center font-medium">
@@ -237,7 +237,7 @@ export default function Header() {
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm">
+              <Button variant="ghost" size="sm" className="bg-[#4490CC] hover:bg-[#00508E] text-white hover:text-white">
                 <Settings className="w-5 h-5" />
               </Button>
             </DropdownMenuTrigger>
@@ -250,7 +250,7 @@ export default function Header() {
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-700 transition-colors">
+              <div className="w-10 h-10 bg-[#4490CC] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#00508E] transition-colors">
                 <User className="w-5 h-5 text-white" />
               </div>
             </DropdownMenuTrigger>
