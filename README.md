@@ -332,7 +332,7 @@ The admin dashboard provides a centralized interface for managing the Digital La
 * **Audit Logs**: Security logs for tracking all admin activities.
 * **Notifications**: Create and broadcast system-wide notifications.
 * **Profile Management**: Admin profile settings, including password changes and activity history.
-
+```
 -----
 
 ### File and Folder Structure
