@@ -333,7 +333,7 @@ The admin dashboard provides a centralized interface for managing the Digital La
 * **Notifications**: Create and broadcast system-wide notifications.
 * **Profile Management**: Admin profile settings, including password changes and activity history.
 
----
+-----
 
 ### File and Folder Structure
 
