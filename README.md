@@ -340,46 +340,49 @@ The admin dashboard provides a centralized interface for managing the Digital La
 ### File and Folder Structure
 
 ```
-admin/
+Team-Imprez_digital-land-registry-admin/
 ├── app/
-│   ├── admin/
-│   │   ├── analytics/
-│   │   │   ├── loading.tsx
-│   │   │   └── page.tsx
-│   │   ├── applications/
-│   │   │   ├── [id]/
-│   │   │   │   └── page.tsx
-│   │   │   ├── loading.tsx
-│   │   │   └── page.tsx
-│   │   ├── appointments/
-│   │   │   ├── loading.tsx
-│   │   │   └── page.tsx
-│   │   ├── audit/
-│   │   │   ├── loading.tsx
-│   │   │   └── page.tsx
-│   │   ├── components/
-│   │   │   ├── Header.tsx
-│   │   │   └── Sidebar.tsx
-│   │   ├── documents/
-│   │   │   ├── loading.tsx
-│   │   │   └── page.tsx
-│   │   ├── notifications/
-│   │   │   ├── loading.tsx
-│   │   │   └── page.tsx
-│   │   ├── profile/
-│   │   │   ├── activity-log/
-│   │   │   │   └── page.tsx
-│   │   │   ├── change-password/
-│   │   │   │   └── page.tsx
-│   │   │   └── settings/
-│   │   │       └── page.tsx
-│   │   ├── reports/
-│   │   │   └── page.tsx
-│   │   ├── users/
-│   │   │   └── page.tsx
-│   │   ├── layout.tsx
-│   │   ├── loading.tsx
-│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   └── admin/
+│       ├── analytics/
+│       │   ├── loading.tsx
+│       │   └── page.tsx
+│       ├── applications/
+│       │   ├── [id]/
+│       │   │   └── page.tsx
+│       │   ├── loading.tsx
+│       │   └── page.tsx
+│       ├── appointments/
+│       │   ├── loading.tsx
+│       │   └── page.tsx
+│       ├── audit/
+│       │   ├── loading.tsx
+│       │   └── page.tsx
+│       ├── components/
+│       │   ├── Header.tsx
+│       │   └── Sidebar.tsx
+│       ├── documents/
+│       │   ├── loading.tsx
+│       │   └── page.tsx
+│       ├── notifications/
+│       │   ├── loading.tsx
+│       │   └── page.tsx
+│       ├── profile/
+│       │   ├── activity-log/
+│       │   │   └── page.tsx
+│       │   ├── change-password/
+│       │   │   └── page.tsx
+│       │   └── settings/
+│       │       └── page.tsx
+│       ├── reports/
+│       │   └── page.tsx
+│       ├── users/
+│       │   └── page.tsx
+│       ├── layout.tsx
+│       ├── loading.tsx
+│       └── page.tsx
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
